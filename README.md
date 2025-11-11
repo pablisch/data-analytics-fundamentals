@@ -20,6 +20,10 @@ See ```L4_Data_Analytics_Fundamentals_assessment_1.docx``` and ```L4_Data_Analyt
 
 N.B. This project expanded and now includes assessment part 2 questions. They are not listed here but can be found in the part2.ipynb file.
 
+## Join datasets notebook
+
+This notebook looks at reproducing what we were shown how to do in Excel in topic 5 where datasets were imported locally, cleaned and joined using Power Query.
+
 ## Virtual environment and dependencies
 
 The virtual environment for this project uses Python 3.14 and was set up by PyCharm.
