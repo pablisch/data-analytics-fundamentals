@@ -17,3 +17,37 @@ See ```L4_Data_Analytics_Fundamentals_assessment_1.docx``` and ```L4_Data_Analyt
 9. Which states had 90 customers churning?
 10. Create a line chart showing the average international minutes used per month over different ages. Describe the overall trend. Select all the apply
 11. True or False: Males Under 30 churned more than Females under 30
+
+N.B. This project expanded and now includes assessment part 2 questions. They are not listed here but can be found in the part2.ipynb file.
+
+## Virtual environment and dependencies
+
+The virtual environment for this project uses Python 3.14 and was set up by PyCharm.
+
+To create a venv manually, ```python3.14 -m venv .venv```
+
+To activate the venv, ```source .venv/bin/activate```
+
+The project has a number of dependencies that need to be installed.
+
+Start by updating pip, ```pip install --upgrade pip```
+
+And install other packages needed:
+```bash
+pip install pandas
+pip install numpy
+pip install matplotlib
+pip install seaborn
+pip install scipy
+pip install statsmodels
+pip install -U pip setuptools wheel
+pip install -U scikit-learn
+```
+
+Running, ```pip freeze > requirements.txt``` copies the installed dependencies, and their versions, to the ```requirements.txt``` file.
+
+If this repo is then used on another machine, run:
+```bash
+python3.14 -m venv .venv
+pip install -r requirements.txt
+```
