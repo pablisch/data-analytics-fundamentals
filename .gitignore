@@ -6,7 +6,9 @@ ENV/
 
 # PyCharm
 .idea/
-.idea/workspace.xml
+!/.idea/codeStyles/
+!/.idea/runConfigurations/
+!/.idea/inspectionProfiles/
 
 # Jupyter Notebook
 .ipynb_checkpoints/
