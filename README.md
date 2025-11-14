@@ -49,8 +49,7 @@ pip install -U scikit-learn
 ```
 
 Running, ```pip freeze > requirements.txt``` copies the installed dependencies, and their versions, to the ```requirements.txt``` file.
-
-If this repo is then used on another machine, run:
+To use this repo with the same python interpreter and dependency versions, clone and run:
 ```bash
 python3.14 -m venv .venv
 pip install -r requirements.txt
