@@ -24,7 +24,15 @@ N.B. This project expanded and now includes assessment part 2 questions. They ar
 
 This notebook looks at reproducing what we were shown how to do in Excel in topic 5 where datasets were imported locally, cleaned and joined using Power Query.
 
-## Virtual environment and dependencies
+## Using this repo, venv and dependencies
+
+To use this repo with the same python interpreter and dependency versions, clone and run:
+```bash
+python3.14 -m venv .venv
+pip install -r requirements.txt
+```
+
+That is all that needs to be done. Everything below in this section is how to do the above manually or an explanation of what was done.
 
 The virtual environment for this project uses Python 3.14 and was set up by PyCharm.
 
@@ -49,8 +57,4 @@ pip install -U scikit-learn
 ```
 
 Running, ```pip freeze > requirements.txt``` copies the installed dependencies, and their versions, to the ```requirements.txt``` file.
-To use this repo with the same python interpreter and dependency versions, clone and run:
-```bash
-python3.14 -m venv .venv
-pip install -r requirements.txt
-```
+
