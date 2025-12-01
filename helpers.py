@@ -1,6 +1,5 @@
 import pandas as pd
 
-
 def is_significant(p_value, alpha=0.05):
     if p_value < alpha:
         print(f"✅ The difference is significant\nThe p-value: {p_value} is {alpha - p_value} less than the alpha: {alpha}\nThe null hypothesis is rejected")
@@ -31,3 +30,10 @@ def clean_bpp_5_dataframes(df: pd.DataFrame):
     df_melted = df_melted.dropna(subset=["Year", "Value"]) # drops any row where "Value" OR "Year" is NaN
 
     return df_melted
+
+def run_sql_query(query, cursor):
+    cursor.execute(query)
+    rows = cursor.fetchall()
+    columns = [desc[0] for desc in cursor.description]
+    df = pd.DataFrame(rows, columns=columns)
+    return df
